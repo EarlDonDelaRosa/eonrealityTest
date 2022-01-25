@@ -1,1 +1,86 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Serif', serif;
+    color: white;
+    background-image: url("assets/images/user.png"), linear-gradient(to right, #1C3763, #BB3B56);
+    background-size: cover, cover;
+    background-repeat: no-repeat, repeat;
+}
+
+.box {
+    margin: auto;
+    padding-top: 17%;
+    padding-left: 50%;
+    padding-right: 12%;
+}
+
+.form-control {
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 35px;
+    height: 70px;
+    padding-left: 30px;
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.form-control:focus {
+    background: transparent;
+    color: white;
+}
+
+.form-control::placeholder {
+    color: white;
+}
+
+.form-control:focus {
+    border: 3px solid lightgreen;
+}
+
+.form-control:invalid {
+    border: 3px solid red;
+}
+
+.form-control:active {
+    border: 3px solid red;
+}
+
+.btn {
+    background: #1C3763;
+    border: 0px;
+    border-radius: 35px;
+    height: 70px;
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+.btn:hover {
+    background: #3862AF;
+    color: white;
+}
+
+a {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a:hover {
+    color: #392A40;
+}
+
+small {
+    color: white;
+    padding-left: 30px;
+    font-family: 'Open Sans', sans-serif;
+}

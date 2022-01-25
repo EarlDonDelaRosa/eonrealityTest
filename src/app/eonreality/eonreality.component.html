@@ -1,0 +1,31 @@
+<!-- start of sign in form -->
+<form [formGroup]="signInForm" autocomplete="off">
+    <div class="form-group box">
+        <div class="col mb-3">
+            <h2><b>Sign In</b></h2>
+        </div>
+        <div class="col mb-3">
+                <input type="email" class="form-control" name="email" placeholder="EMAIL*" formControlName="Email">
+                <small *ngIf="email.invalid && email.touched">Please enter a valid email address.</small>
+        </div>
+        <div class="col mb-3">
+            <input type="password" class="form-control" name="password" placeholder="PASSWORD*" formControlName="Password" minlength="6" maxlength="12">
+        </div>
+        <div class="col mb-3">
+            <button class="btn" (click)="onNext()" [disabled]="!signInForm.valid">NEXT &nbsp; &#11166;</button>
+        </div>
+        <!-- start of forgot password link -->
+        <div class="col mb-3" align="right">
+            <a routerLink="/forgotpw" type="button">Forgot Password?</a>
+        </div>
+        <!-- end of forgot password link -->
+        <!-- start of create account link -->
+        <div class="col mb-3" align="right">
+            <a>Not a Member?&nbsp;</a>
+            <span>&nbsp;</span>
+            <a routerLink="/create">Start for Free</a>
+        </div>
+        <!-- end of create account link -->
+    </div>
+</form>
+<!-- end of sign in form -->
